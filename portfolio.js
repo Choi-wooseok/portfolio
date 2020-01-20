@@ -10,7 +10,7 @@ $(document).on("click", "#menu", () => {
   }
 });
 $(document).on("click", "#goMain", () => {
-  location.href = "main.html";
+  location.href = "index.html";
 });
 $(document).on("click", "#profile", () => {
   location.href = "profile.html";
