@@ -1,0 +1,164 @@
+/* =============== public ================ */
+body {
+  margin: 0;
+  background-color: black;
+  /* background-image: url("./image/92a2a8afefed44ea8a67abd2c7717140.jpg"); */
+}
+#goMain {
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  cursor: pointer;
+  opacity: .7;
+}
+/* =============== main ================ */
+#menu {
+  position: absolute;
+  border: none;
+  /* background-color: #6dd5bc; */
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  cursor: pointer;
+}
+#menu:hover {
+  font-size: 1.1rem;
+  text-shadow: 6px 6px 6px #aaa;
+  transition-duration: 0.4s;
+}
+#morePage {
+  float: left;
+  width: 30vh;
+  /* height: 100vh; */
+  /* background-color: #6dd5bc; */
+  margin-left: -15%;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10%;
+}
+.sideMenu {
+  margin-top: 10%;
+  cursor: pointer;
+  /* height: 30px; */
+  /* font-family: 'Tangerine', serif; */
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 4px;
+  font-size: 48px;
+  transition-duration: 0.4s;
+}
+.sideMenu:hover {
+  text-shadow: 6px 6px 6px #aaa;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  transition-duration: 0.4s;
+}
+#backImage {
+  position: absolute;
+  background-image: url("./image/291ff8e1-0db8-4c6e-9221-3cdfad93e165.jpg");
+  opacity: 0.5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+#main {
+  position: relative;
+  float: right;
+  height: 100vh;
+  width: 170vh;
+  /* text-align: center; */
+  color: white;
+  /* padding-top: 25vh; */
+  font-size: 48px;
+}
+#main > h4 {
+  font-family: "Indie Flower", cursive;
+  padding-right: 25%;
+  text-align: right;
+  font-size: 30px;
+  cursor: default;
+  /* margin-top: -10%; */
+}
+#main > h2 {
+  padding-top: 25vh;
+  /* padding-left: 5%; */
+  text-align: left;
+  font-size: 120px;
+  font-family: "Tangerine", serif;
+  cursor: default;
+  /* font-family: "Indie Flower", cursive; */
+}
+
+/* =============== site ================ */
+.siteLink {
+  color: white;
+  font-family: "Tangerine", serif;
+  font-size: 80px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: lighter;
+  cursor: pointer;
+  height: 0vh;
+  margin-top: 0;
+}
+.siteLink:hover {
+  font-size: 90px;
+  text-shadow: 6px 6px 6px white;
+  transition-duration: 0.4s;
+}
+.about {
+  color: white;
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 15vh;
+}
+.siteImage {
+  width: 90vh;
+}
+.siteDiv {
+  width: 100%;
+  text-align: center;
+  margin-top: 15vh;
+}
+
+/* =============== skill ================ */
+#usedSkill {
+  color: white;
+  font-family: "Tangerine", serif;
+  font-size: 80px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 10vh;
+  margin-bottom: 13vh;
+}
+.skills {
+  /* width: 28vh;
+  height: 26vh; */
+  width: 40%;
+  height: 65%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 17vh;
+  float: left;
+}
+.skillName {
+  color: white;
+  font-size: 20px;
+  /* font-family: "Tangerine", serif; */
+  font-family: 'Courgette', cursive;
+  width: 28vh;
+  font-weight: lighter;
+  margin-left: 15vh;
+}
+.skillDiv {
+  height: 40vh;
+  width: 63vh;
+  float: left;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swiper.min.css">
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap">
+    <!-- js -->
+    <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="./portfolio.js"></script>
+    <script src="./swiper.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 40%;
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div id="goMain">
+        <i class="fas fa-home fa-2x"></i>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_main.jpg)"></div>
+          <!-- <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_login.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_join.jpg)"></div> -->
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_search.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_maindetail.jpg)"></div>
+          <!-- <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_profile.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_myProject.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_myFeed.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_chat.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_adminMain.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_memberManagement.jpg)"></div> -->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <h4 id="awethumb" class="siteLink" >awethumb.kr</h4>
+    <h3 class="about">My Part - MainPage, Search, Hashtag, Comment</h3>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_main.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_team.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_insert.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_detail.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <h4 id="awethumb" class="siteLink" >bitcomu</h4>
+    <h3 class="about">My Part - TeamProject Board CRUD</h3>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+</body>
+</html>
