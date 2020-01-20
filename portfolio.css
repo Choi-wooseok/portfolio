@@ -9,7 +9,7 @@ body {
   color: white;
   padding: 0.5rem 1rem 0.5rem 1rem;
   cursor: pointer;
-  opacity: .7;
+  opacity: 0.7;
 }
 /* =============== main ================ */
 #menu {
@@ -85,7 +85,7 @@ body {
   padding-top: 25vh;
   /* padding-left: 5%; */
   text-align: left;
-  font-size: 120px;
+  font-size: 150px;
   font-family: "Tangerine", serif;
   cursor: default;
   /* font-family: "Indie Flower", cursive; */
@@ -110,7 +110,7 @@ body {
 }
 .about {
   color: white;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   font-size: 20px;
   text-decoration: none;
   text-align: center;
@@ -152,7 +152,7 @@ body {
   color: white;
   font-size: 20px;
   /* font-family: "Tangerine", serif; */
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   width: 28vh;
   font-weight: lighter;
   margin-left: 15vh;
