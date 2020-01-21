@@ -1,89 +1,189 @@
 <!DOCTYPE html>
 <html lang="kor">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <!-- css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="portfolio.css" />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="./swiper.min.css">
+    <link rel="stylesheet" href="./swiper.min.css" />
     <!-- 폰트 -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap"
+    />
     <!-- js -->
     <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="./portfolio.js"></script>
     <script src="./swiper.min.js"></script>
     <style>
-        .swiper-container {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        .swiper-slide {
-            background-position: center;
-            background-size: cover;
-            width: 40%;
-            height: 350px;
-        }
+      .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 5%;
+      }
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 40%;
+        height: 350px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="goMain">
-        <i class="fas fa-home fa-2x"></i>
+      <i class="fas fa-home fa-2x"></i>
     </div>
+    <!-- Awethumb -->
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_main.jpg)"></div>
-          <!-- <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_login.jpg)"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"
+          style="background-image: url(./image/awethumb/awethumb_main.jpg)"
+        ></div>
+        <!-- <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_login.jpg)"></div>
           <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_join.jpg)"></div> -->
-          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_search.jpg)"></div>
-          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_maindetail.jpg)"></div>
-          <!-- <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_profile.jpg)"></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(./image/awethumb/awethumb_search.jpg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(./image/awethumb/awethumb_maindetail.jpg)"
+        ></div>
+        <!-- <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_profile.jpg)"></div>
           <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_myProject.jpg)"></div>
           <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_myFeed.jpg)"></div>
           <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_chat.jpg)"></div>
           <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_adminMain.jpg)"></div>
           <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_memberManagement.jpg)"></div> -->
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
-    <h4 id="awethumb" class="siteLink" >awethumb.kr</h4>
-    <h3 class="about">My Part - MainPage, Search, Hashtag, Comment</h3>
+    <h4 id="awethumb" class="siteLink">awethumb.kr</h4>
+    <span class="siteHover">클릭시 사이트로 이동</span>
+    <div class="about">
+      <div class="myPart" id="AwethumbPart">My Part -</div>
+      <div class="myPart" id="MainPage">MainPage,</div>
+      <div class="myPart" id="Search">Search,</div>
+      <div class="myPart" id="Hashtag">Hashtag,</div>
+      <div class="myPart" id="Comment">Comment</div>
+    </div>
+      <div class="explain" id="awethumbExplain">
+        ▶프로젝트 명 : awethumb<br>
+        ▶참 여 인 원 : 6명<br>
+        ▶개 발 기 간 : 약 2개월<br>
+        ▶내       용 : 브레인스토밍에 기반한 SNS<br>
+        ▶개 발 환 경 : Java8, MySQL, Tomcat9.0, Github, GoogleCloudServer, Eclipse IDE<br>
+        ▶사 용 기 술 : 프론트앤드 - HTML, CSS, JavaSript, Jqeury<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        백앤드 - JAVA Spring Framework, Spring Security<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        웹 소켓통신<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        MVC 디자인패턴<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <br>
+        해당 part를 클릭하면 자세한 설명을 보실 수 있습니다.
+      </div>
+      <div class="explain" id="mainResult">
+        SNS의 특성상 한 페이지에 많은 기능을 필요로 하기때문에 대부분의 코드가 javascript로 이루어져있습니다.<br>
+        MainFeed는 비회원도 볼 수 있는 페이지로 저희 사이트의 메인페이지입니다. <br>
+        Infinity Scroll을 이용하여 페이징처리 하였으며 ‘Simple is the Best’를 모토로 
+        카드형식의 Masonry layout을 이용하여 깔끔한 UI를 구현하고자 했습니다. <br>
+        카드를 클릭 시 DetailFeed가 모달창으로 나오게 됩니다. <br>
+        DetailFeed에서 이미지는 여러 개의 경우 이미지 우측 하단에 아이콘으로 표시해주고 Drag 방식의 페이징이 가능하게 했습니다.<br> 
+        DetailFeed의 화면 우측 상단은 게시글이, 하단에는 댓글이 표시되도록 구현했고 로그인 시에만 댓글 등록과 좋아요 기능을 사용 가능하도록 제한을 두었습니다. 
+      </div>
+      <div class="explain" id="searchResult">
+         KeyUp Event를 사용하여 사용자의 입력값에 즉각적으로 반응할 수 있게 구현했습니다.<br> 
+        Event 함수 안에 조건을 주어 #을 먼저 입력할 경우 해시태그만, 그냥 입력할 경우 회원 닉네임이 먼저 나오고 밑에 해시태그가 뜰 수 있게 구현했습니다. <br>
+        검색 결과에서 닉네임을 클릭 시 해당 회원의 프로필 페이지로 이동하고 해시태그를 클릭 시 해당 해시태그가 있는 모든 게시물들이 메인화면 대신 뜨게 됩니다. <br>
+        해시태그 검색결과 화면의 경우 화면을 따로 구현하지 않고 메인페이지를 뿌려주는 Ajax에서 조건을 주어  
+        검색어가 들어올 경우 해당 검색어가 존재하는 카드만 뿌려줄 수 있게 구현하여 통일성을 주고자 했습니다. 
+      </div>
+      <div class="explain" id="hashtagResult">
+           검색과 마찬가지로 KeyUp Event함수 내에 조건을 주어 게시글이나 댓글 작성시 #이 들어오면 
+         다음 띄어쓰기까지를 해시태그 블록으로 표시해줍니다. 글 작성 이후에는 해당 글을 뿌려줄 때 #을 감지하여 해시태그를 
+         span태그로 감싸주고 span태그에 ClickEvent를 주어 해시태그 클릭 시 검색된 화면으로 이동할 수 있게 구현했습니다. 
+      </div>
+      <div class="explain" id="commentResult">
+        댓글은 DetailFeed에서 확인 혹은 작성할 수 있게 구현했습니다.<br>
+        DetailFeed 전체가 javascript로 되어있기 때문에 댓글 또한 마찬가지로 javascript로 구현되어있습니다<br>
+        비회원의 경우 댓글은 읽기만 가능합니다.<br>
+        로그인시 댓글작성 및 좋아요, 신고가 가능하며 댓글 작성시 해시태그도 작성 가능합니다.<br>
+
+      </div>
+         <!-- bitcomu -->
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_main.jpg)"></div>
-            <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_team.jpg)"></div>
-            <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_insert.jpg)"></div>
-            <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_detail.jpg)"></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_main.jpg)"></div>
+        <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_team.jpg)"></div>
+        <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_mainAdmin.jpg)"></div>
+        <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_insert.jpg)"></div>
+        <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_detail.jpg)"></div>
+        <div class="swiper-slide" style="background-image: url(./image/bitcomu/bitcomu_update.jpg)"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
-    <h4 id="awethumb" class="siteLink" >bitcomu</h4>
-    <h3 class="about">My Part - TeamProject Board CRUD</h3>
-      <script>
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : true,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-          },
-        });
-      </script>
-</body>
+    <h4 id="bitcomu" class="siteLink">bitcomu</h4>
+    <span class="siteHover">클릭시 사이트로 이동</span>
+    <div class="about">
+      <div class="myPart" id="BitPart">My Part -</div>
+      <div class="myPart" id="TeamProject">TeamProject Board CRUD</div>
+    </div>
+    <div class="explain" id="BitExplain">
+      ▶프로젝트 명 : bitcomu<br>
+      ▶참 여 인 원 : 7명<br>
+      ▶개 발 기 간 : 약 2개월<br>
+      ▶내       용 : 비트캠프 4강의실의 커뮤니티<br>
+      ▶개 발 환 경 : Java8, Oracle, Tomcat9.0, Github<br>
+      ▶사 용 기 술 : 프론트앤드 - HTML, CSS, JavaSript, Jqeury<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        백앤드 - JAVA<br>
+        <br>
+        해당 part를 클릭하면 자세한 설명을 보실 수 있습니다.
+    </div>
+    <div class="explain" id="teamResult">
+      커뮤니티의 기능 중 팀프로젝트를 대비한 게시판입니다.<br>
+      3차로 나뉘어진 프로젝트의 특징을 기준으로 구현했습니다. <br>
+      상단에는 현재페이지의 프로젝트 차수 및 조 번호 navigation이 위치해있습니다.<br>
+      관리자모드로 로그인시 좌측 사이드바에서 조를 추가 및 삭제할 수 있기 때문에 회차별로 조를 유동적이게 구성할 수 있습니다.<br>
+      관리자는 모든 글 및 댓글에 대한 수정, 삭제권한을 가지며 일반유저의 경우 본인의 글과 댓글에 대한 수정, 삭제 권한을 가집니다.<br>
+      글 등록 시 등록 modal창이 뜨고 회차 및 조 번호는  현재의 위치에 따라 자동으로 생성됩니다.<br>
+      글 제목 클릭시 detail modal창이 뜨며 내용을 확인할 수 있고 댓글보기 클릭시 댓글창이 아코디언 형식으로 나타나게 됩니다.<br>
+
+    </div>
+
+
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        },
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      });
+    </script>
+  </body>
 </html>
