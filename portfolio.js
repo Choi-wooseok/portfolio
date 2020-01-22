@@ -37,39 +37,34 @@ $(document).on("mouseout", ".siteLink", () => {
   $(".siteHover").css("display", "none");
 });
 $(document).on("click", "#AwethumbPart", () => {
+  $(".explain").css("display", "none");
+  $(".codeImg").css("display", "none");
+  // $("#mainExp").css("display", "none");
   $("#awethumbExplain").css("display", "block");
-  $("#mainResult").css("display", "none");
-  $("#searchResult").css("display", "none");
-  $("#hashtagResult").css("display", "none");
-  $("#commentResult").css("display", "none");
 });
 $(document).on("click", "#MainPage", () => {
-  $("#awethumbExplain").css("display", "none");
+  $(".explain").css("display", "none");
+  $(".codeImg").css("display", "none");
   $("#mainResult").css("display", "block");
-  $("#searchResult").css("display", "none");
-  $("#hashtagResult").css("display", "none");
-  $("#commentResult").css("display", "none");
+  $("#mainExp").css("display", "block");
 });
 $(document).on("click", "#Search", () => {
-  $("#awethumbExplain").css("display", "none");
-  $("#mainResult").css("display", "none");
+  $(".explain").css("display", "none");
+  $(".codeImg").css("display", "none");
   $("#searchResult").css("display", "block");
-  $("#hashtagResult").css("display", "none");
-  $("#commentResult").css("display", "none");
+  $("#searchExp").css("display", "block");
 });
 $(document).on("click", "#Hashtag", () => {
-  $("#awethumbExplain").css("display", "none");
-  $("#mainResult").css("display", "none");
-  $("#searchResult").css("display", "none");
+  $(".explain").css("display", "none");
+  $(".codeImg").css("display", "none");
   $("#hashtagResult").css("display", "block");
-  $("#commentResult").css("display", "none");
+  $("#hashExp").css("display", "block");
 });
 $(document).on("click", "#Comment", () => {
-  $("#awethumbExplain").css("display", "none");
-  $("#mainResult").css("display", "none");
-  $("#searchResult").css("display", "none");
-  $("#hashtagResult").css("display", "none");
+  $(".explain").css("display", "none");
+  $(".codeImg").css("display", "none");
   $("#commentResult").css("display", "block");
+  $("#cmtExp").css("display", "block");
 });
 // bitcomu
 $(document).on("click", "#BitPart", () => {

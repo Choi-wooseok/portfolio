@@ -162,7 +162,18 @@ body {
   font-size: 23px;
   transition-duration: 0.4s;
 }
+.gitLink {
+  text-decoration: none;
+  color: white;
+}
+.gitLink:hover {
+  font-size: 18px;
+  transition-duration: 0.4s;
+}
 
+.codeImg {
+  top: -110px;
+}
 #awethumbExplain,
 #BitExplain {
   margin-top: -5%;

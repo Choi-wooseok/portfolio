@@ -6,26 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <!-- css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link rel="stylesheet" href="portfolio.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./swiper.min.css" />
     <!-- 폰트 -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Tangerine"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap"/>
     <!-- js -->
     <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="./portfolio.js"></script>
@@ -33,15 +21,15 @@
     <style>
       .swiper-container {
         width: 100%;
-        padding-top: 50px;
+        padding-top: 30px;
         padding-bottom: 50px;
         margin-top: 5%;
       }
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 40%;
-        height: 350px;
+        width: 50%;
+        height: 360px;
       }
     </style>
   </head>
@@ -52,19 +40,11 @@
     <!-- Awethumb -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"
-          style="background-image: url(./image/awethumb/awethumb_main.jpg)"
-        ></div>
+        <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_main.jpg)"></div>
         <!-- <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_login.jpg)"></div>
           <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_join.jpg)"></div> -->
-        <div
-          class="swiper-slide"
-          style="background-image: url(./image/awethumb/awethumb_search.jpg)"
-        ></div>
-        <div
-          class="swiper-slide"
-          style="background-image: url(./image/awethumb/awethumb_maindetail.jpg)"
-        ></div>
+        <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_search.jpg)"></div>
+        <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_maindetail.jpg)"></div>
         <!-- <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_profile.jpg)"></div>
           <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_myProject.jpg)"></div>
           <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_myFeed.jpg)"></div>
@@ -93,9 +73,19 @@
         ▶사 용 기 술 : 프론트앤드 - HTML, CSS, JavaSript, Jqeury<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         백앤드 - JAVA Spring Framework, Spring Security<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         웹 소켓통신<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        MVC 디자인패턴<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        <br>
-        해당 part를 클릭하면 자세한 설명을 보실 수 있습니다.
+        MVC 디자인패턴<br>
+        <!-- <br> -->
+        ▶GitHub : <a class="gitLink" href="https://github.com/Choi-wooseok/awethumb">https://github.com/Choi-wooseok/awethumb</a><br> 
+        <br>&emsp;&emsp;&emsp;&emsp;&emsp;해당 part를 클릭하면 자세한 설명을 보실 수 있습니다.
+      </div>
+      <div class="swiper-container codeImg" id="mainExp">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_mainJAVA.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_mainJavascript.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_mainXML.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
       <div class="explain" id="mainResult">
         SNS의 특성상 한 페이지에 많은 기능을 필요로 하기때문에 대부분의 코드가 javascript로 이루어져있습니다.<br>
@@ -106,6 +96,14 @@
         DetailFeed에서 이미지는 여러 개의 경우 이미지 우측 하단에 아이콘으로 표시해주고 Drag 방식의 페이징이 가능하게 했습니다.<br> 
         DetailFeed의 화면 우측 상단은 게시글이, 하단에는 댓글이 표시되도록 구현했고 로그인 시에만 댓글 등록과 좋아요 기능을 사용 가능하도록 제한을 두었습니다. 
       </div>
+      <div class="swiper-container codeImg" id="searchExp">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_searchJavascript.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_searchXML.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
       <div class="explain" id="searchResult">
          KeyUp Event를 사용하여 사용자의 입력값에 즉각적으로 반응할 수 있게 구현했습니다.<br> 
         Event 함수 안에 조건을 주어 #을 먼저 입력할 경우 해시태그만, 그냥 입력할 경우 회원 닉네임이 먼저 나오고 밑에 해시태그가 뜰 수 있게 구현했습니다. <br>
@@ -113,17 +111,34 @@
         해시태그 검색결과 화면의 경우 화면을 따로 구현하지 않고 메인페이지를 뿌려주는 Ajax에서 조건을 주어  
         검색어가 들어올 경우 해당 검색어가 존재하는 카드만 뿌려줄 수 있게 구현하여 통일성을 주고자 했습니다. 
       </div>
+      <div class="swiper-container codeImg" id="hashExp">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_hashJavascript.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_hashsplitJavascript.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_hashXML.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
       <div class="explain" id="hashtagResult">
            검색과 마찬가지로 KeyUp Event함수 내에 조건을 주어 게시글이나 댓글 작성시 #이 들어오면 
          다음 띄어쓰기까지를 해시태그 블록으로 표시해줍니다. 글 작성 이후에는 해당 글을 뿌려줄 때 #을 감지하여 해시태그를 
          span태그로 감싸주고 span태그에 ClickEvent를 주어 해시태그 클릭 시 검색된 화면으로 이동할 수 있게 구현했습니다. 
+      </div>
+      <div class="swiper-container codeImg" id="cmtExp">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_cmtJAVA.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_commentXML.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(./image/awethumb/awethumb_cmtJavascript.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
       <div class="explain" id="commentResult">
         댓글은 DetailFeed에서 확인 혹은 작성할 수 있게 구현했습니다.<br>
         DetailFeed 전체가 javascript로 되어있기 때문에 댓글 또한 마찬가지로 javascript로 구현되어있습니다<br>
         비회원의 경우 댓글은 읽기만 가능합니다.<br>
         로그인시 댓글작성 및 좋아요, 신고가 가능하며 댓글 작성시 해시태그도 작성 가능합니다.<br>
-
       </div>
          <!-- bitcomu -->
     <div class="swiper-container">
@@ -166,6 +181,11 @@
 
     </div>
 
+    <script>
+      $(document).ready(() => {
+        $(".codeImg").css("display", "none");
+      })
+    </script>
 
     <script>
       var swiper = new Swiper(".swiper-container", {
