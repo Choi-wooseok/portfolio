@@ -67,6 +67,9 @@ $(document).on("click", "#Comment", () => {
   $("#cmtExp").css("display", "block");
 });
 // bitcomu
+$(document).on("click", "#bitcomu", () => {
+  window.open("https://bitcomu.cf");
+});
 $(document).on("click", "#BitPart", () => {
   $("#BitExplain").css("display", "block");
   $("#teamResult").css("display", "none");
