@@ -1,12 +1,12 @@
 // main page ======================================
 $(document).on("click", "#menu", () => {
   let menu = document.getElementById("menu");
-  if (menu.style.marginLeft === "14%") {
-    $("#morePage").css("margin-left", "-15%");
-    $("#menu").css("margin-left", "0%");
+  if (menu.style.marginLeft === "240px") {
+    $("#morePage").css("margin-left", "-240px");
+    $("#menu").css("margin-left", "0px");
   } else {
-    $("#morePage").css("margin-left", "0%");
-    $("#menu").css("margin-left", "14%");
+    $("#morePage").css("margin-left", "0px");
+    $("#menu").css("margin-left", "240px");
   }
 });
 $(document).on("click", "#goMain", () => {
@@ -78,4 +78,3 @@ $(document).on("click", "#TeamProject", () => {
   $("#BitExplain").css("display", "none");
   $("#teamResult").css("display", "block");
 });
-
