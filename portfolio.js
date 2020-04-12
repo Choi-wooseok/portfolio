@@ -31,8 +31,8 @@ $(document).on("click", "#awethumb", () => {
   window.open("http://awethumb.kr");
 });
 $(document).on("mouseover", ".siteLink", () => {
-    $(".siteHover").css("display", "block");
-})
+  $(".siteHover").css("display", "block");
+});
 $(document).on("mouseout", ".siteLink", () => {
   $(".siteHover").css("display", "none");
 });

@@ -4,18 +4,20 @@ body {
   /* height: 100%; */
   margin: 0;
   background-color: black;
+  position: relative;
   /* background-image: url("./image/92a2a8afefed44ea8a67abd2c7717140.jpg"); */
 }
 body > div {
   /* position: relative; */
   /* height: 100%; */
-  min-width: 1280px;
+  /* max-width: 1280px; */
+  min-width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 .bgwrap {
   position: absolute;
-  background: url("./image/291ff8e1-0db8-4c6e-9221-3cdfad93e165.jpg");
+  /* background: url("./image/291ff8e1-0db8-4c6e-9221-3cdfad93e165.jpg"); */
   background-image: url("./image/291ff8e1-0db8-4c6e-9221-3cdfad93e165.jpg");
   background-size: cover;
   background-repeat: none;
@@ -72,8 +74,6 @@ body > div {
 .sideMenu {
   margin-bottom: 50px;
   cursor: pointer;
-  /* height: 30px; */
-  /* font-family: 'Tangerine', serif; */
   font-family: "Indie Flower", cursive;
   letter-spacing: 4px;
   font-size: 48px;
@@ -123,15 +123,29 @@ body > div {
 }
 
 /* ============= profile =============== */
+.resWrap {
+  min-width: 90% !important;
+  width: 900px;
+  height: 1200px;
+  position: relative;
+  margin: 60px;
+  /* overflow: scroll; */
+  /* left: 50%;
+  transform: translate(-45%); */
+}
 #resume {
-  width: 1550px;
-  height: 1700px;
-  padding-top: 20px;
-  margin-bottom: 30px;
+  /* box-sizing: border-box; */
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  /* padding-top: 20px;
+  margin-bottom: 30px; */
   background-image: url("./image/feaple-profile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  /* overflow-x: scroll; */
+  /* background-position: center; */
+  background-size: cover;
+  float: left;
+  /* margin: 50px 50px; */
 }
 /* #resume > img {
   width: 100vh;
@@ -148,7 +162,7 @@ body > div {
   cursor: pointer;
   height: 0px;
   margin-top: 0;
-  min-width: 1280px;
+  min-width: 100%;
 }
 .siteLink:hover {
   font-size: 90px;
@@ -167,7 +181,7 @@ body > div {
   border-radius: 5px;
   color: white;
   opacity: 0.8;
-  left: 800px;
+  left: 50%;
   margin-top: -35px;
 }
 .about {
@@ -178,7 +192,8 @@ body > div {
   /* margin-left: 500px; */
   /* width: 1000px; */
   position: relative;
-  height: 30px;
+  height: 55px;
+  min-width: 534px;
 }
 .about > div {
   position: absolute;
@@ -223,7 +238,7 @@ body > div {
 .explain {
   /* margin-top: -80px;
   left: 350px; */
-  width: 750px;
+  width: 100%;
   float: left;
   position: relative;
   color: white;

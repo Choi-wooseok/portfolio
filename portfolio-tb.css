@@ -7,7 +7,6 @@ body {
   /* background-image: url("./image/92a2a8afefed44ea8a67abd2c7717140.jpg"); */
 }
 body > div {
-  /* position: relative; */
   /* height: 100%; */
   min-width: 1280px;
   margin: 0 auto;
@@ -54,20 +53,15 @@ body > div {
   left: 0;
   /* float: left; */
   width: 240px;
-  height: 100%;
-  /* overflow: hidden; */
+  /* height: 490px; */
   /* background-color: #6dd5bc; */
   margin-left: -240px;
   color: white;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  /* padding-top: 200px; */
-  background-color: black;
+  padding-top: 200px;
   z-index: 1;
-}
-#morePage > div {
-  margin-top: 180px;
 }
 .sideMenu {
   margin-bottom: 50px;
@@ -81,7 +75,8 @@ body > div {
 }
 .sideMenu:hover {
   text-shadow: 6px 6px 6px #aaa;
-  font-size: 60px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   transition-duration: 0.4s;
 }
 /* .backImage {

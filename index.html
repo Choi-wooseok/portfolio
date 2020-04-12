@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="kor">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <!-- css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="portfolio.css" /> -->
+    <link rel="stylesheet" type="text/css" media="all and (max-width:1280px)" href="portfolio-mobile.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:1281px)" href="portfolio.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen and (max-width:1280px)" href="portfolio-tb.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width:0) and (max-width:1280)" href="portfolio-mobile.css"> -->
     <!-- 폰트 -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+    />
     <!-- js -->
     <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="./portfolio.js"></script>
-</head>
-<body>
-        <div id="menu">
-            <i class="fas fa-bars fa-4x"></i>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="bgwrap"></div>
+      <div id="menu">
+        <i class="fas fa-bars fa-4x"></i>
+      </div>
+      <div id="morePage">
+        <div>
+          <div id="profile" class="sideMenu">Profile</div>
+          <div id="skill" class="sideMenu">Skill</div>
+          <div id="site" class="sideMenu">Portfolio</div>
         </div>
-        <div id="content">
-            <div id="morePage">
-                <div id="profile" class="sideMenu">Profile</div>
-                <div id="skill" class="sideMenu">Skill</div>
-                <div id="site" class="sideMenu">Portfolio</div>
-            </div>
-            <div id="backImage"></div>
-            <div id="main">
-                <h2>Wooseok's Portfolio</h2>
-                <h4>System.Out.Println("Newbie")</h4>
-            </div>
-            
+      </div>
+      <div id="content">
+        <!-- <div id="backImage"></div> -->
+        <div id="main">
+          <h2>Wooseok's Portfolio</h2>
+          <h4>System.Out.Println("Newbie")</h4>
         </div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
