@@ -139,6 +139,12 @@ body > div {
 } */
 
 /* =============== site ================ */
+#info {
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
 .swiper-container { 
   width: 100% !important; 
   padding-top: 30px !important;
