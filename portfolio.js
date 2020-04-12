@@ -9,6 +9,10 @@ $(document).on("click", "#menu", () => {
     $("#menu").css("margin-left", "240px");
   }
 });
+$(document).on("click", ".bgwrap", () => {
+    $("#morePage").css("margin-left", "-240px");
+    $("#menu").css("margin-left", "0px");
+})
 $(document).on("click", "#main", () => {
     $("#morePage").css("margin-left", "-240px");
     $("#menu").css("margin-left", "0px");
