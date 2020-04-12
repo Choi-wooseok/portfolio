@@ -153,6 +153,23 @@ body > div {
 } */
 
 /* =============== site ================ */
+.swiper-container { 
+  width: 100% !important; 
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
+  /* margin-top: 8%; */
+}
+.swiper-slide {
+  /* background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 360px; */
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  width: 54% !important;
+  height: 260px !important;
+}
 .siteLink {
   color: white;
   font-family: "Tangerine", serif;
@@ -239,7 +256,7 @@ body > div {
 .explain {
   /* margin-top: -80px;
   left: 350px; */
-  width: 100%;
+  /* width: 100%; */
   float: left;
   position: relative;
   color: white;
