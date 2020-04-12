@@ -43,9 +43,10 @@ body > div {
   color: white;
   padding: 10px 15px;
   cursor: pointer;
+  font-size: 3.5rem;
 }
 #menu:hover {
-  font-size: 1.1rem;
+  font-size: 3.7rem;
   text-shadow: 6px 6px 6px #aaa;
   transition-duration: 0.4s;
 }
