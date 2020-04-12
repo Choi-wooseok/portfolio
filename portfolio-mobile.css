@@ -157,16 +157,15 @@ body > div {
   width: 100% !important; 
   padding-top: 30px !important;
   padding-bottom: 50px !important;
-  /* margin-top: 8%; */
 }
 .swiper-slide {
   /* background-position: center;
   background-size: cover;
   width: 50%;
   height: 360px; */
-  background-position: center !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 54% !important;
   height: 260px !important;
 }
