@@ -110,14 +110,14 @@ body > div {
   font-family: "Indie Flower", cursive;
   padding-right: 210px;
   text-align: right;
-  font-size: 30px;
+  font-size: 20px;
   cursor: default;
   /* margin-top: -10%; */
 }
 #main > h2 {
   padding-top: 100px;
   text-align: center;
-  font-size: 150px;
+  font-size: 120px;
   font-family: "Tangerine", serif;
   cursor: default;
   /* font-family: "Indie Flower", cursive; */
