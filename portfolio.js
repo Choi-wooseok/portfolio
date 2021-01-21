@@ -1,22 +1,10 @@
 // main page ======================================
-$(document).on("click", "#menu", () => {
-  let menu = document.getElementById("menu");
-  if (menu.style.marginLeft === "240px") {
-    $("#morePage").css("margin-left", "-240px");
-    $("#menu").css("margin-left", "0px");
-  } else {
-    $("#morePage").css("margin-left", "0px");
-    $("#menu").css("margin-left", "240px");
-  }
+$(document).on("click", "#menu", (e) => {
+  $("#morePage").toggle("show");
 });
-$(document).on("click", ".bgwrap", () => {
-    $("#morePage").css("margin-left", "-240px");
-    $("#menu").css("margin-left", "0px");
-})
-$(document).on("click", "#main", () => {
-    $("#morePage").css("margin-left", "-240px");
-    $("#menu").css("margin-left", "0px");
-})
+$(document).on("click", ".bgwrap, #content", (e) => {
+  $("#morePage").toggle("hide");
+});
 $(document).on("click", "#goMain", () => {
   location.href = "index.html";
 });
@@ -31,6 +19,9 @@ $(document).on("click", "#skill", () => {
 });
 $(document).on("click", "#contact", () => {
   location.href = "contact.html";
+});
+$(document).on("click", "#todayILearning", () => {
+  location.href = "T_I_L.html";
 });
 
 // site page =======================================

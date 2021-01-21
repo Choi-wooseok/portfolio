@@ -1,10 +1,7 @@
 /* =============== public ================ */
 body {
-  min-height: 100vh;
-  /* height: 100%; */
   margin: 0;
   background-color: black;
-  /* background-image: url("./image/92a2a8afefed44ea8a67abd2c7717140.jpg"); */
 }
 body > div {
   /* position: relative; */
@@ -15,7 +12,6 @@ body > div {
 }
 .bgwrap {
   position: absolute;
-  background: url("./image/291ff8e1-0db8-4c6e-9221-3cdfad93e165.jpg");
   background-image: url("./image/291ff8e1-0db8-4c6e-9221-3cdfad93e165.jpg");
   background-size: cover;
   background-repeat: none;
@@ -51,6 +47,7 @@ body > div {
   transition-duration: 0.4s;
 }
 #morePage {
+  display: none;
   position: absolute;
   left: 0;
   /* float: left; */
@@ -58,7 +55,7 @@ body > div {
   height: 100%;
   /* overflow: hidden; */
   /* background-color: #6dd5bc; */
-  margin-left: -240px;
+  /* margin-left: -240px; */
   color: white;
   font-size: 25px;
   font-weight: bold;
@@ -301,4 +298,27 @@ body > div {
   width: 400px; */
   float: left;
   margin: 10px 15px;
+}
+/* ===================== TIL ======================= */
+#TILList {
+  color: white;
+  width: 50%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 10%;
+  font-size: 25px;
+}
+li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: solid .5px white;
+
+}
+#TILList p {
+  cursor: pointer;
+}
+#TILList p:hover {
+  color: lightgray;
 }
