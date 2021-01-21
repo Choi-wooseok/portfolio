@@ -6,7 +6,7 @@ $(document).on("click", ".bgwrap, #content", (e) => {
   $("#morePage").toggle("hide");
 });
 $(document).on("click", "#goMain", () => {
-  location.href = "index.html";
+  location.href = "/";
 });
 $(document).on("click", "#profile", () => {
   location.href = "profile.html";
