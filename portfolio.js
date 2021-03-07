@@ -23,6 +23,9 @@ $(document).on("click", "#contact", () => {
 $(document).on("click", "#todayILearning", () => {
   location.href = "T_I_L.html";
 });
+$(document).on("click", "#graffiti", () => {
+  location.href = "graffiti.html";
+});
 
 // site page =======================================
 // Awethumb

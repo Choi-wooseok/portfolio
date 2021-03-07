@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>평가총괄표 양식</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" media="all and (max-width:1280px)" href="portfolio-mobile.css">
+  <!-- <link rel="stylesheet" type="text/css" media="all and (min-width:1281px)" href="portfolio.css"> -->
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./swiper.min.css" />
+  <!-- 폰트 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap" />
+  <!-- js -->
+  <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+  <script src="./portfolio.js"></script>
+  <script src="./swiper.min.js"></script>
+  <style>
+    .content {
+      margin-bottom: 50px;
+    }
+
+    .titleWrap {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      height: 50px;
+      justify-content: space-around;
+    }
+
+    .title {
+      width: 50%;
+    }
+
+    .titleInput {
+      width: 50%;
+      height: 30px;
+      border-bottom: solid .5px gray;
+      margin-left: 20px;
+    }
+
+    input {
+      border: none;
+    }
+
+    textarea.category {
+      width: 75%;
+      background: none;
+      resize: none;
+      border: none;
+      text-align: center;
+      font: 400 13.3333px Arial;
+      overflow: hidden;
+    }
+
+    .table {
+      table-layout: auto;
+      border: solid .5px gray;
+      border-collapse: collapse;
+      width: 95%;
+      margin-left: 50%;
+      transform: translate(-50%);
+    }
+
+    .table thead th,
+    .secondHeader {
+      background-color: lightgray;
+      height: 35px;
+      cursor: default;
+    }
+
+    .table thead th,
+    .table tbody td {
+      border: solid .5px gray;
+      text-align: center;
+    }
+
+    .table input {
+      width: 98%;
+      height: 25px;
+      text-align: center;
+    }
+
+    .largeCategoryWrap {
+      background-color: lightsteelblue;
+    }
+
+    .largeCategory:not(.secondHeader):disabled {
+      background-color: lightsteelblue;
+    }
+
+    .secondHeader {
+      font-weight: bold;
+      font-size: initial;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="titleWrap">
+    <div class="title">
+      <span>구역명 : </span>
+      <input type="text" class="titleInput" />
+    </div>
+    <div class="btnWrap">
+      <button type="button" id="modifyLayOut">양식수정</button>
+      <button type="button" id="saveLayOut" disabled>수정완료</button>
+      <button type="button" id="resetContent">내용 리셋</button>
+      <button type="button" id="makeExcel">엑셀파일 만들기</button>
+    </div>
+  </div>
+  <div class="content">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>부문</th>
+          <th>평가항목</th>
+          <th colspan="2">계획 또는 목표치</th>
+          <th>평점(a)</th>
+          <th>가중치(b)</th>
+          <th>환산(a*b)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="first">
+          <td rowspan="4" class="largeCategoryWrap"><input type="text" class="largeCategory" value="1. 탄소흡수" /></td>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="공원녹지확보비" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td><input type="text" class="elementA" /></td>
+          <td><input type="text" class="elementB" /></td>
+          <td><input type="text" class="result" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="생태면적률" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="자연지반면적률" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <!-- <td><input type="text" class="category" value="탄소흡수 부문평가 합계 (만점: 50점)" /></td> -->
+          <td class="middleCategoryWrap"><textarea class="category">탄소흡수 부문평가 합계&#10;(만점: 50점)</textarea></td>
+          <td colspan="5"><input type="text" /></td>
+        </tr>
+        <tr id="second">
+          <td rowspan="11" class="largeCategoryWrap"><input type="text" class="largeCategory" value="2. 탄소저감" /></td>
+          <td rowspan="2" class="middleCategoryWrap"><input type="text" class="category" value="직주근접" /></td>
+          <td class="unitCategoryWrap"><input type="text" class="unit" value="(분)" /></td>
+          <td><input type="text" /></td>
+          <td rowspan="2"><input type="text" /></td>
+          <td rowspan="2"><input type="text" /></td>
+          <td rowspan="2"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="unitCategoryWrap"><input type="text" class="unit" value="(km)" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td rowspan="3" class="middleCategoryWrap"><input type="text" class="category" value="대중교통활성화" /></td>
+          <td class="unitCategoryWrap"><input type="text" class="unit" value="집중도" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td rowspan="3"><input type="text" /></td>
+          <td rowspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="unitCategoryWrap"><input type="text" class="unit" value="복합도" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="unitCategoryWrap"><input type="text" class="unit" value="소계" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="자전거활성화" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="녹색대중교통" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="친환경건축물 비율" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="신, 재생에너지 이용" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="빗물이용" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="중수이용" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="largeCategoryWrap"><input type="text" class="largeCategory" value="3. 기타" /></td>
+          <td class="middleCategoryWrap"><input type="text" class="category" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="largeCategoryWrap"><input type="text" class="largeCategory" /></td>
+          <!-- <td><input type="text" class="category" value="탄소흡수 부문평가 합계 (만점: 50점)" /></td> -->
+          <td class="middleCategoryWrap"><textarea class="category">탄소흡수 부문평가 합계&#10;(만점: 50점)</textarea></td>
+          <td colspan="5"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="largeCategoryWrap"><textarea
+              class="category">정량평가 합계&#10;(탄소흡수+탄소저감, 만점: 100점)</textarea></td>
+          <td colspan="5"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td rowspan="11" class="largeCategoryWrap"><input type="text" class="largeCategory" value="4. 정성평가" /></td>
+          <td class="secondHeader">평가항목</td>
+          <td colspan="2" class="secondHeader">반영여부</td>
+          <td colspan="3" class="secondHeader">평가</td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="녹지축연결계획" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="하천보전" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <!-- <td class="middleCategoryWrap"><input type="text" class="category" value="습지보전지역, 생태경관 보전지역 등의 보호"/></td> -->
+          <td class="middleCategoryWrap"><textarea class="category">습지보전지역, 생태경관 보전지역 등의 보호</textarea></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="바람길" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="친환경 주차장 등" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="보행자로" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="폐기물 재활용" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="집단에너지 공급시설" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="건축물 에너지 관리" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="middleCategoryWrap"><input type="text" class="category" value="기타" /></td>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="largeCategoryWrap"><textarea
+              class="category">정성평가 합계&#10;(항목 당 0.01로 산정하고 최고0.05를 초과할 수 없다.)</textarea></td>
+          <td colspan="5"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="largeCategoryWrap"><textarea
+              class="category">최종 평점&#10;(정량평가 합계*[1+정성평가 합계])</textarea></td>
+          <td colspan="5"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="largeCategoryWrap"><input class="largeCategory" value="평가등급" /></td>
+          <td colspan="5"><input type="text" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <span>작성자 : </span>
+      <input type="text" class="titleInput">
+    </div>
+  </div>
+  <script>
+    $(document).ready(() => {
+      $('.category, .largeCategory, .unit').attr('disabled', true);
+    })
+    $(document).on('click', '#modifyLayOut', () => {
+      $('.category, .largeCategory, .unit, #saveLayOut').not('.secondHeader').removeAttr('disabled');
+    })
+    $(document).on('click', '#saveLayOut', () => {
+      $('.category, .largeCategory, .unit, #saveLayOut').attr('disabled', true);
+    })
+    $(document).on('click', '#resetContent', () => {
+      let result = confirm('내용을 비우시겠습니까?');
+      if (result) {
+        $('.table input').not('.category, .largeCategory, .unit').val('');
+      } else {
+        return false;
+      }
+    })
+    $(document).on('click', '#makeExcel', () => {
+      alert('기다려 아직이야');
+    })
+  </script>
+  <!-- <div style="margin-left: 50%; transform: translate(-50%); text-align: center;">
+    <div>사칙연산</div>
+    <div>동적 나누기</div>
+    <input type="number" id="inputA" />
+    <input type="number" id="inputB" />
+    <button type="button" class="resultButton" id="division">나누기</button>
+    <button type="button" class="resultButton" id="multiplication">곱하기</button>
+    <button type="button" class="resultButton" id="plus">더하기</button>
+    <button type="button" class="resultButton" id="minus">빼기</button>
+    <br />
+    <span>결과 : </span>
+    <input type="number" id="resultInput" />
+    <button type="button" class="resultButton" id="reverse">역계산</button>
+  </div>
+  <script>
+    $(document).on('click', '.resultButton', (e) => {
+      let buttonId = e.currentTarget.id;
+      let result = 0
+      const a = Number($('#inputA').val());
+      const b = Number($('#inputB').val());
+      switch (buttonId) {
+        case "division":
+          result = a / b;
+          $('#resultInput').val(result);
+          break;
+        case "multiplication":
+          result = a * b;
+          $('#resultInput').val(result);
+          break;
+        case "plus":
+          result = a + b;
+          $('#resultInput').val(result);
+          break;
+        case "minus":
+          result = a - b;
+          $('#resultInput').val(result);
+          break;
+        default: 0; break;
+      }
+    })
+  </script> -->
+</body>
+
+</html>
